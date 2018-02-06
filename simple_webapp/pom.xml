@@ -4,7 +4,7 @@
   <groupId>org.sonatype.mavenbook</groupId>
   <artifactId>simple_webapp</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>simple_webapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -21,11 +21,11 @@
   <distributionManagement>
     <repository>
     <id>releases</id>
-    <url>http://18.219.57.180:8080/nexus-latest/content/repositories/releases/</url>
+    <url>http://18.220.28.51:8080/nexus-2.14.5-02/content/repositories/releases/</url>
     </repository>
     <snapshotRepository>
     <id>snapshots</id>
-    <url>http://18.219.57.180:8080/nexus-latest/content/repositories/snapshots/</url>
+    <url>http://18.220.28.51:8080/nexus-2.14.5-02/content/repositories/snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 
