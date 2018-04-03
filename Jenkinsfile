@@ -4,7 +4,8 @@ pipeline {
 	  stage ('Compile Stage') {
 	   steps {
 	    withMaven(maven : 'maven_3.5.3') {
-	    sh 'mvn clean compile'
+	    sh 'cd /var/lib/jenkins/workspace/mynew/simple_webapp/pom.xml'
+		sh 'mvn clean compile' 
 		}
 		}  
 		}
@@ -12,14 +13,16 @@ pipeline {
 		 stage ('Test Stage') {
 	     steps {
 	     withMaven(maven : 'maven_3.5.3') {
-	      sh 'mvn test'  
+	      sh 'cd /var/lib/jenkins/workspace/mynew/simple_webapp/pom.xml'
+		  sh 'mvn test'  
 		}
 		}  
 		}
 		 stage ('Deploy Stage') {
 	     steps {
 	      withMaven(maven : 'maven_3.5.3') {
-	      sh 'mvn install compile'
+	      sh 'cd /var/lib/jenkins/workspace/mynew/simple_webapp/pom.xml'
+		  sh 'mvn install compile'
 		}
 		}  
 		}
