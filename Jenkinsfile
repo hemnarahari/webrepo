@@ -17,7 +17,7 @@ pipeline {
 	     steps {
 	     
 	     
-		  sh 'mvn test'  
+		  sh 'mvn -f /var/lib/jenkins/workspace/pipeline job/simple_webapp/pom.xml test' 
 		
 		}  
 		}
@@ -25,7 +25,7 @@ pipeline {
 	     steps {
 	      
 	      
-		  sh 'mvn install compile'
+		  sh 'mvn -f /var/lib/jenkins/workspace/pipeline job/simple_webapp/pom.xml install'
 		
 		}  
 		}
