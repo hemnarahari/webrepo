@@ -7,8 +7,8 @@ pipeline {
 	  stage ('Compile Stage') {
 	   steps {
 	    
-	        sh 'cd /var/lib/jenkins/workspace/pipeline job/simple_webapp/'
-		sh 'mvn clean compile' 
+	       
+		sh 'mvn -f /var/lib/jenkins/workspace/pipeline job/simple_webapp/pom.xml clean compile' 
 		}
 		}  
 		
