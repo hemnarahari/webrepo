@@ -7,7 +7,7 @@ pipeline {
 	  stage ('Compile Stage') {
 	   steps {
 	    
-	     sh 'cd /var/lib/jenkins/workspace/pipeline job/simple_webapp/pom.xml'
+	    
 		sh 'mvn clean compile' 
 		}
 		}  
@@ -16,7 +16,7 @@ pipeline {
 		 stage ('Test Stage') {
 	     steps {
 	     
-	      sh 'cd /var/lib/jenkins/workspace/pipeline job/simple_webapp/pom.xml'
+	     
 		  sh 'mvn test'  
 		
 		}  
@@ -24,7 +24,7 @@ pipeline {
 		 stage ('Deploy Stage') {
 	     steps {
 	      
-	       sh 'cd /var/lib/jenkins/workspace/pipeline job/simple_webapp/pom.xml'
+	      
 		  sh 'mvn install compile'
 		
 		}  
