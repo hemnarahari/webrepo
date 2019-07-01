@@ -7,7 +7,7 @@ pipeline {
 	  stage ('Compile Stage') {
 	   steps {
 	    
-		   dir("/var/lib/jenkins/workspace/pipeline job/simple_webapp/") {
+		   dir("/var/jenkins_home/workspace/Jenkins sample Java Maven Project/") {
 		sh 'mvn clean compile' 
 		   }	   
 		}
@@ -18,7 +18,7 @@ pipeline {
 	     steps {
 	     
 	     
-		  dir("/var/lib/jenkins/workspace/pipeline job/simple_webapp/") {
+		  dir("/var/jenkins_home/workspace/Jenkins sample Java Maven Project/") {
 		sh 'mvn test' 
 		   }	  
 		
@@ -28,7 +28,7 @@ pipeline {
 	     steps {
 	      
 	      
-		  dir("/var/lib/jenkins/workspace/pipeline job/simple_webapp/") {
+		  dir("/var/jenkins_home/workspace/Jenkins sample Java Maven Project") {
 		sh 'mvn install' 
 		   }	  
 		
